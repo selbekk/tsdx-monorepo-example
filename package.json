@@ -1,0 +1,16 @@
+{
+  "name": "tsdx-monorepo-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "workspaces": [
+    "packages/package-a",
+    "packages/package-b"
+  ],
+  "dependencies": {
+    "lerna": "^3.16.4"
+  }
+}
