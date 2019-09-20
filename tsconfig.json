@@ -1,5 +1,4 @@
 {
-  "include": ["packages/*/src", "packages/*/types"],
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
@@ -7,7 +6,6 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -20,11 +18,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./packages",
+    "paths": {
+      "*": ["packages/*/src", "node_modules/*"]
+    }
   }
 }
